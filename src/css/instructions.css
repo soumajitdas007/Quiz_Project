@@ -1,0 +1,712 @@
+.instructions-page {
+
+    min-height: calc(100vh - 64px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f8ff 0%,
+            #eef4ff 50%,
+            #f8fafc 100%
+        );
+
+    padding: 55px 20px 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+.instructions-card {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 42px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e5eaf2;
+
+    box-shadow:
+        0 20px 60px rgba(15, 23, 42, 0.10);
+
+    animation: cardAppear 0.45s ease;
+
+}
+@keyframes cardAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+.instructions-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+.subject-badge {
+
+    width: 68px;
+
+    height: 68px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f8df7
+        );
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 22px rgba(37, 99, 235, 0.25);
+
+    flex-shrink: 0;
+
+}
+.header-small {
+
+    margin: 0 0 5px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+.instructions-header h1 {
+
+    margin: 0;
+
+    color: #0f172a;
+
+    font-size: 32px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+}
+.title-section {
+    padding: 28px 0 25px;
+
+}
+.title-section h2 {
+    margin: 0 0 8px;
+
+    color: #0f172a;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+.title-section p {
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+.quiz-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+
+    margin-bottom: 34px;
+
+}
+.info-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8fbff,
+            #f4f7fc
+        );
+
+    border: 1px solid #e4eaf3;
+
+    border-radius: 15px;
+
+    padding: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.info-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #cbdafa;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.10);
+
+}
+.info-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 12px;
+
+    background: #eaf2ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+
+}
+.info-card span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+
+}
+.info-card strong {
+
+    display: block;
+
+    color: #0f172a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+.rules-section {
+
+    margin-top: 5px;
+
+}
+.rules-section h3 {
+
+    margin: 0 0 18px;
+
+    color: #0f172a;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+}
+.rules-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+}
+.rule {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 15px 16px;
+
+    background: #fafbfe;
+
+    border: 1px solid #edf0f5;
+
+    border-radius: 13px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.rule:hover {
+
+    transform: translateX(4px);
+
+    border-color: #cbdafa;
+
+    background: #f8faff;
+
+}
+
+.rule-number {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    flex-shrink: 0;
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.18);
+
+}
+.rule h4 {
+
+    margin: 1px 0 5px;
+
+    color: #0f172a;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+}
+.rule p {
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+.warning-box {
+
+    margin-top: 25px;
+
+    padding: 16px 18px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #f0f7ff
+        );
+
+    border: 1px solid #d5e5ff;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+}
+.warning-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+
+}
+
+.warning-box strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #1e40af;
+
+    font-size: 14px;
+
+}
+
+.warning-box p {
+
+    margin: 0;
+
+    color: #3b5d91;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+.instruction-buttons {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #edf0f5;
+
+}
+.back-btn {
+    border: 1px solid #dce3ec;
+    background: #ffffff;
+    color: #475569;
+    border-radius: 11px;
+    padding: 13px 22px;
+    min-width: 115px;
+    font-size: 14px;
+    font-weight: 650;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition:
+        all 0.25s ease;
+}
+.back-btn:hover {
+    background: #f8fafc;
+    border-color: #b9c7da;
+    color: #1e293b;
+    transform: translateY(-2px);
+    box-shadow:
+        0 7px 18px rgba(15, 23, 42, 0.08);
+}
+.back-arrow {
+    font-size: 18px;
+    transition:
+        transform 0.25s ease;
+}
+.back-btn:hover .back-arrow {
+    transform: translateX(-4px);
+}
+.start-btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 25px;
+    min-width: 170px;
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow:
+        0 9px 22px rgba(37, 99, 235, 0.28);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.start-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.25),
+            transparent
+        );
+    transform: skewX(-20deg);
+    transition:
+        left 0.6s ease;
+}
+.start-btn:hover::before {
+    left: 140%;
+}
+.start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 13px 28px rgba(37, 99, 235, 0.36);
+}
+.start-btn:active {
+    transform: translateY(-1px);
+    box-shadow:
+        0 7px 16px rgba(37, 99, 235, 0.25);
+}
+.start-arrow {
+    font-size: 19px;
+    transition:
+        transform 0.25s ease;
+}
+.start-btn:hover .start-arrow {
+    transform: translateX(5px);
+}
+.no-subject-card {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.10);
+    border: 1px solid #e5eaf2;
+    animation: cardAppear 0.4s ease;
+}
+.no-subject-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #fff7ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+.no-subject-card h1 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 25px;
+}
+.no-subject-card p {
+    color: #64748b;
+    margin: 0 0 25px;
+    line-height: 1.6;
+}
+.primary-btn {
+    border: none;
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+    color: #ffffff;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 650;
+    cursor: pointer;
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.25);
+    transition:
+        all 0.25s ease;
+
+}
+.primary-btn:hover {
+    transform: translateY(-2px);
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #2563eb
+        );
+    box-shadow:
+        0 11px 22px rgba(37, 99, 235, 0.30);
+}
+@media (max-width: 850px) {
+    .instructions-page {
+        padding: 35px 18px 55px;
+    }
+    .instructions-card {
+        padding: 32px;
+    }
+    .quiz-info-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .instructions-page {
+        padding: 20px 12px 40px;
+    }
+    .instructions-card {
+        padding: 22px;
+        border-radius: 18px;
+    }
+    .instructions-header {
+        gap: 13px;
+        padding-bottom: 22px;
+    }
+    .subject-badge {
+        width: 55px;
+        height: 55px;
+        border-radius: 14px;
+        font-size: 18px;
+    }
+    .instructions-header h1 {
+        font-size: 23px;
+    }
+    .header-small {
+        font-size: 12px;
+    }
+    .title-section {
+        padding: 23px 0 20px;
+    }
+    .title-section h2 {
+        font-size: 21px;
+    }
+    .title-section p {
+        font-size: 13px;
+    }
+    .quiz-info-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    .info-card {
+        padding: 14px;
+    }
+    .rule {
+        padding: 13px;
+        gap: 11px;
+    }
+    .rule-number {
+        width: 34px;
+        height: 34px;
+        font-size: 10px;
+    }
+    .rule h4 {
+        font-size: 14px;
+    }
+    .rule p {
+        font-size: 12px;
+    }
+    .warning-box {
+        padding: 13px;
+    }
+    .instruction-buttons {
+        flex-direction: column-reverse;
+        gap: 11px;
+    }
+    .back-btn,
+    .start-btn {
+        width: 100%;
+        min-width: 0;
+    }
+    .no-subject-card {
+        padding: 35px 22px;
+    }
+}
+@media (max-width: 380px) {
+    .instructions-card {
+        padding: 18px;
+    }
+    .instructions-header h1 {
+        font-size: 21px;
+    }
+    .subject-badge {
+        width: 50px;
+        height: 50px;
+    }
+    .rule {
+        gap: 9px;
+    }
+}
